@@ -13,21 +13,13 @@ function clearMessages(){
 }
 
 function getMoveName(argMoveId) {
-
 console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
-
 if (argMoveId == 1) {
-
 return 'kamień';
-
 } else if (argMoveId == 2) {
-
 return 'papier';
-
 } else if (argMoveId == 3) {
-
 return 'nozyce';
-
 } else {
 
 printMessage('Nie znam ruchu o id ' + argMoveId + '. Zakładam, że chodziło o "kamień".');
@@ -64,14 +56,13 @@ printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 function buttonClicked(argButtonName) {
 clearMessages();
 console.log(argButtonName + ' został kliknięty');
-playerMove = argButtonName;
-console.log('wybór ruchu gracza to: ' + playerInput);
+let playerMove = argButtonName;
 console.log('ruch gracza to: ' + playerMove);
-randomNumber = Math.floor(Math.random() * 3 + 1);
+let randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('wylosowana liczba to: ' + randomNumber);
-computerMove = getMoveName(randomNumber);
+let computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
-result = displayResult(playerMove, computerMove);
+let result = displayResult(playerMove, computerMove);
 if(result == true){
     playerPoints = playerPoints + 1;
 } else if (result == false){
@@ -80,13 +71,12 @@ if(result == true){
 printMessage(playerPoints + ":" + computerPoints);
 }
 
-var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber, buttonPaper, buttonRock, buttonScissors, computerPoints, playerPoints, result;
-buttonRock = document.getElementById('button-rock');
+const buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
-buttonPaper = document.getElementById('button-paper');
+const buttonPaper = document.getElementById('button-paper');
 buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
-buttonScissors = document.getElementById('button-scissors');
+const buttonScissors = document.getElementById('button-scissors');
 buttonScissors.addEventListener('click', function(){ buttonClicked('nozyce'); });
 
-computerPoints = 0;
-playerPoints = 0;
+let computerPoints = 0;
+let playerPoints = 0;
