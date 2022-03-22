@@ -1,0 +1,55 @@
+body { 
+    font-size: 20px; 
+    margin: 0;
+
+    header {
+        background-color: azure;
+        
+        h1, p { 
+            margin: 0;
+            text-align: center;
+            padding-top: 15px;
+        }
+        
+        p {
+            font-size: 1.2em;
+            padding: 10px;
+        }
+    }
+    .game { 
+        background-color: antiquewhite;
+        
+        .container { 
+            width: 1140px; 
+            margin: 0 auto; 
+
+            .game-wrap {
+                display: flex; 
+                flex-direction: column;
+
+                .buttons { 
+                    margin: auto;
+                    padding: 40px 0;
+                }
+
+                .btn {
+                    padding: 15px;
+                    background-color: gold;
+                    border: 1px solid gold;
+                    font-size: 1.2em;
+                    border-radius: 20%;
+                }
+
+                .messages {
+                    text-align: center;
+
+                    div {
+                        text-align: center;
+                        font-size: 2em;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

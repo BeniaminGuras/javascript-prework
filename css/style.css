@@ -1,3 +1,47 @@
+body {
+  font-size: 20px;
+  margin: 0;
+}
+body header {
+  background-color: azure;
+}
+body header h1, body header p {
+  margin: 0;
+  text-align: center;
+  padding-top: 15px;
+}
+body header p {
+  font-size: 1.2em;
+  padding: 10px;
+}
+body .game {
+  background-color: antiquewhite;
+}
+body .game .container {
+  width: 1140px;
+  margin: 0 auto;
+}
+body .game .container .game-wrap {
+  display: flex;
+  flex-direction: column;
+}
+body .game .container .game-wrap .buttons {
+  margin: auto;
+  padding: 40px 0;
+}
+body .game .container .game-wrap .btn {
+  padding: 15px;
+  background-color: gold;
+  border: 1px solid gold;
+  font-size: 1.2em;
+  border-radius: 20%;
+}
+body .game .container .game-wrap .messages {
+  text-align: center;
+}
+body .game .container .game-wrap .messages div {
+  text-align: center;
+  font-size: 2em;
+}
 
-
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGVBQUE7RUFDQSxTQUFBO0FDQ0o7QURDSTtFQUNJLHVCQUFBO0FDQ1I7QURDUTtFQUNJLFNBQUE7RUFDQSxrQkFBQTtFQUNBLGlCQUFBO0FDQ1o7QURFUTtFQUNJLGdCQUFBO0VBQ0EsYUFBQTtBQ0FaO0FER0k7RUFDSSw4QkFBQTtBQ0RSO0FER1E7RUFDSSxhQUFBO0VBQ0EsY0FBQTtBQ0RaO0FER1k7RUFDSSxhQUFBO0VBQ0Esc0JBQUE7QUNEaEI7QURHZ0I7RUFDSSxZQUFBO0VBQ0EsZUFBQTtBQ0RwQjtBRElnQjtFQUNJLGFBQUE7RUFDQSxzQkFBQTtFQUNBLHNCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxrQkFBQTtBQ0ZwQjtBREtnQjtFQUNJLGtCQUFBO0FDSHBCO0FES29CO0VBQ0ksa0JBQUE7RUFDQSxjQUFBO0FDSHhCIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */

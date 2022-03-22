@@ -6,15 +6,25 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="container">
-		<div id="buttons">
-            <button id="button-rock">Kamień</button>
-            <button id="button-paper">Papier</button>
-            <button id="button-scissors">Nożyce</button>
-        </div>
-		<div id="messages"></div>
-        <div id="points"></div>
-	</div>
+	<header>
+		<div class="title">
+			<h1>Witaj! Zagraj w kamien papier nozyce!</h1>
+			<p>Wybierz swoją figure</p>
+		</div>
+	</header>
+	<section class="game">
+		<div class="container">
+			<div class="game-wrap">
+				<div class="buttons" id="buttons">
+					<button class="btn" id="button-rock">Kamień</button>
+					<button class="btn" id="button-paper">Papier</button>
+					<button class="btn" id="button-scissors">Nożyce</button>
+				</div>
+				<div class="messages" id="messages"></div>
+				<div id="points"></div>
+			</div>
+		</div>
+	</section>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
 </body>
